@@ -321,7 +321,7 @@ function Update:Window(Config)
 	local keybind = keybind or Enum.KeyCode.RightControl;
 	local yoo = string.gsub(tostring(keybind), "Enum.KeyCode.", "");
 	local NoxHub = Instance.new("ScreenGui");
-	NoxHub.Name = "NoxHub";
+	NoxHub.Name = "Welbx";
 	NoxHub.Parent = game.CoreGui;
 	NoxHub.DisplayOrder = 999;
 	local OutlineMain = Instance.new("Frame");
