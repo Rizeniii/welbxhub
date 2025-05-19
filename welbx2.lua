@@ -1,4 +1,4 @@
-if (game:GetService("CoreGui")):FindFirstChild("WelbxHUb") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
+if (game:GetService("CoreGui")):FindFirstChild("WelbXHub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
 	(game:GetService("CoreGui")).NoxHub:Destroy();
 	(game:GetService("CoreGui")).ScreenGui:Destroy();
 end;
@@ -70,12 +70,12 @@ ImageButton.BackgroundColor3 = _G.Dark;
 ImageButton.ImageColor3 = Color3.fromRGB(250, 250, 250);
 ImageButton.ImageTransparency = 0;
 ImageButton.BackgroundTransparency = 0;
-ImageButton.Image = "rbxassetid://10723407389";
+ImageButton.Image = "rbxassetid://13940080072";
 ImageButton.AutoButtonColor = false;
 MakeDraggable(ImageButton, OutlineButton);
 CreateRounded(ImageButton, 10);
 ImageButton.MouseButton1Click:connect(function()
-	(game.CoreGui:FindFirstChild("WelbX")).Enabled = not (game.CoreGui:FindFirstChild("WelbX")).Enabled;
+	(game.CoreGui:FindFirstChild("WelbXHub")).Enabled = not (game.CoreGui:FindFirstChild("WelbXHub")).Enabled;
 end);
 local NotificationFrame = Instance.new("ScreenGui");
 NotificationFrame.Name = "NotificationFrame";
@@ -127,14 +127,14 @@ function Update:Notify(desc)
 	Image.BackgroundTransparency = 1;
 	Image.Position = UDim2.new(0, 8, 0, 8);
 	Image.Size = UDim2.new(0, 45, 0, 45);
-	Image.Image = "rbxassetid://10723407389";
+	Image.Image = "rbxassetid://13940080072";
 	Title.Parent = Frame;
 	Title.BackgroundColor3 = _G.Primary;
 	Title.BackgroundTransparency = 1;
 	Title.Position = UDim2.new(0, 55, 0, 14);
 	Title.Size = UDim2.new(0, 10, 0, 20);
 	Title.Font = Enum.Font.GothamBold;
-	Title.Text = "NoxHUb";
+	Title.Text = "WelbXHub";
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255);
 	Title.TextSize = 16;
 	Title.TextXAlignment = Enum.TextXAlignment.Left;
@@ -184,7 +184,7 @@ function Update:StartLoad()
 	MainLoaderFrame.BorderSizePixel = 0;
 	local TitleLoader = Instance.new("TextLabel");
 	TitleLoader.Parent = MainLoaderFrame;
-	TitleLoader.Text = "WelbXHUb";
+	TitleLoader.Text = "WelbXHub";
 	TitleLoader.Font = Enum.Font.FredokaOne;
 	TitleLoader.TextSize = 50;
 	TitleLoader.TextColor3 = Color3.fromRGB(255, 255, 255);
@@ -406,12 +406,12 @@ function Update:Window(Config)
 	CloseButton.AnchorPoint = Vector2.new(1, 0.5);
 	CloseButton.Position = UDim2.new(1, -15, 0.5, 0);
 	CloseButton.Size = UDim2.new(0, 20, 0, 20);
-	CloseButton.Image = "rbxassetid://10723407389";
+	CloseButton.Image = "rbxassetid://7743878857";
 	CloseButton.ImageTransparency = 0;
 	CloseButton.ImageColor3 = Color3.fromRGB(245, 245, 245);
 	CreateRounded(CloseButton, 3);
 	CloseButton.MouseButton1Click:connect(function()
-		(game.CoreGui:FindFirstChild("NoxHub")).Enabled = not (game.CoreGui:FindFirstChild("NoxHub")).Enabled;
+		(game.CoreGui:FindFirstChild("WelbXHub")).Enabled = not (game.CoreGui:FindFirstChild("WelbXHub")).Enabled;
 	end);
 	local ResizeButton = Instance.new("ImageButton");
 	ResizeButton.Name = "ResizeButton";
@@ -421,7 +421,7 @@ function Update:Window(Config)
 	ResizeButton.AnchorPoint = Vector2.new(1, 0.5);
 	ResizeButton.Position = UDim2.new(1, -50, 0.5, 0);
 	ResizeButton.Size = UDim2.new(0, 20, 0, 20);
-	ResizeButton.Image = "rbxassetid://10723407389";
+	ResizeButton.Image = "rbxassetid://10734886735";
 	ResizeButton.ImageTransparency = 0;
 	ResizeButton.ImageColor3 = Color3.fromRGB(245, 245, 245);
 	CreateRounded(ResizeButton, 3);
@@ -672,7 +672,7 @@ function Update:Window(Config)
 	MakeDraggable(Top, OutlineMain);
 	UserInputService.InputBegan:Connect(function(input)
 		if input.KeyCode == Enum.KeyCode.Insert then
-			(game.CoreGui:FindFirstChild("NoxHub")).Enabled = not (game.CoreGui:FindFirstChild("NoxHub")).Enabled;
+			(game.CoreGui:FindFirstChild("WelbXHub")).Enabled = not (game.CoreGui:FindFirstChild("WelbXHub")).Enabled;
 		end;
 	end);
 	local Dragging = false;
@@ -858,7 +858,7 @@ function Update:Window(Config)
 					Tab:TweenSize(UDim2.new(0, WindowConfig.TabWidth, 0, Main.AbsoluteSize.Y - Top.AbsoluteSize.Y - 10), "Out", "Quad", 0.4, true);
 				end);
 				OutlineMain:TweenSize(UDim2.new(0, WindowConfig.Size.X.Offset + 15, 0, WindowConfig.Size.Y.Offset + 15), "Out", "Quad", 0.4, true);
-				ResizeButton.Image = "rbxassetid://10723407389";
+				ResizeButton.Image = "rbxassetid://10734886735";
 			end;
 		end);
 		local main = {};
